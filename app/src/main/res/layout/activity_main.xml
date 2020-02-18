@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/button_register"></Button>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/register_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/name_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_editor_absoluteX="0dp">
+
+                <ImageView
+                    android:id="@+id/hero_image"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/tony_stark"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/hero_image"
+                    android:layout_alignBottom="@id/hero_image"
+                    android:layout_toStartOf="@id/hero_image"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:hint="@string/name_edit_hint"></EditText>
+
+                    <EditText
+                        android:id="@+id/lastName_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lastName_edit_hint"></EditText>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/name_image_layout"
+                android:layout_marginTop="117dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_image_layout"
+                tools:layout_editor_absoluteX="0dp">
+
+                <EditText
+                    android:id="@+id/nameHero_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/hero_name_edit_hint"></EditText>
+
+                <EditText
+                    android:id="@+id/age_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/age_edit_hint"></EditText>
+
+                <EditText
+                    android:id="@+id/address_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/address_edit_hint"></EditText>
+
+                <EditText
+                    android:id="@+id/city_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/city_edit_hint"></EditText>
+                <EditText
+                    android:id="@+id/zip_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/zip_edit_hint"></EditText>
+
+                <EditText
+                    android:id="@+id/country_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/country_edit_hint"></EditText>
+
+                <EditText
+                    android:id="@+id/job_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/job_edit_hint"></EditText>
+
+                <EditText
+                    android:id="@+id/blood_type_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/blood_type_edit_hint"></EditText>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

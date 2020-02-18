@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SuperHeroRecord</string>
+    <string name="name_edit_hint">Name</string>
+    <string name="lastName_edit_hint">Last name</string>
+    <string name="hero_name_edit_hint">Hero name</string>
+    <string name="age_edit_hint">Age</string>
+    <string name="address_edit_hint">Address</string>
+    <string name="city_edit_hint">City</string>
+    <string name="zip_edit_hint">ZIP</string>
+    <string name="button_register">Register</string>
+    <string name="country_edit_hint">Country</string>
+    <string name="job_edit_hint">Job</string>
+    <string name="blood_type_edit_hint">Blood type</string>
+</resources>
